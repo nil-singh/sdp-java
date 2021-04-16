@@ -1,0 +1,24 @@
+package programming_hack;
+
+public class varargs {
+
+	static int sum(int ...arr)
+	{
+		int result=0;
+		for(int a: arr)
+		{
+			result +=a;
+		}
+		
+		return result;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println("Welcome To Nil's Java Code");
+		System.out.println("The sum of 4 and 5 is: " + sum(...arr: 4, 5));
+     	System.out.println("The sum of 4, 3 and 5 is: " + sum(...arr: 4, 3, 5));
+	}
+
+}
